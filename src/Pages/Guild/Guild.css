@@ -1,0 +1,187 @@
+.guild {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.guild section {
+  background: #f3f3f3;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+
+.guild > section h2 {
+  font-size: var(--body2);
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--ff2);
+}
+
+.guild > :first-child h2 img {
+  width: 20px;
+  height: 20px;
+}
+
+.guild > :first-child h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.guild > :first-child h3 img {
+  height: 35px;
+}
+
+.guild > :first-child h3 button {
+  outline: none;
+  cursor: pointer;
+  background: #ffcb2933;
+  border: 1px solid #ffcb29;
+  border-radius: 10px;
+  font-size: var(--body2);
+  padding: 5px 15px;
+  font-weight: 500;
+  font-family: var(--ff2);
+  height: 35px;
+}
+
+.guild > :nth-child(2) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.guild > :nth-child(2) > h3 p {
+  font-size: var(--t2);
+  font-weight: 400;
+  font-family: var(--ff2);
+}
+
+.guild > :nth-child(2) > h3 span img {
+  width: 15px;
+  height: 15px;
+}
+
+.guild > :nth-child(2) > h3 span {
+  font-size: var(--body2);
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-family: var(--ff2);
+}
+
+.guild > :nth-child(2) > section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.guild > :nth-child(2) > section span {
+  font-size: var(--chip);
+  font-weight: 700;
+  font-family: var(--ff2);
+  background: #ffcb2933;
+  border: 1px solid #ffcb29;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.guild > :nth-child(2) > section span img {
+  width: 10px;
+  height: 10px;
+}
+
+.guild > :nth-child(2) > section p {
+  font-size: var(--body2);
+  font-weight: 400;
+  font-family: var(--ff2);
+}
+
+.guild > :nth-child(3) {
+  padding: 0;
+  overflow: hidden;
+}
+
+.guild > :nth-child(3) > h2 {
+  font-size: var(--chip);
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  padding-top: 20px;
+}
+
+.guild > :nth-child(3) > h3 {
+  font-size: 32px;
+  font-family: var(--ff1);
+  padding: 0 20px;
+}
+
+.guild > :nth-child(3) div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: var(--ff2);
+  padding: 0 20px;
+}
+
+.guild > :nth-child(3) > :nth-child(3) img {
+  width: 100%;
+}
+
+.guild .from {
+  color: #ffcb29;
+}
+
+.guild .to {
+  color: #000;
+  opacity: 0.6;
+}
+
+.buttons {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #ffcb29;
+  border-radius: 0px 0px 16px 16px;
+  padding: 0px !important;
+}
+
+.buttons button img {
+  width: 20px;
+  height: 20px;
+}
+
+.buttons button {
+  width: 50%;
+  border: none;
+  height: 55px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--body1);
+  font-family: var(--ff2);
+}
+
+.buttons > :first-child {
+  background: #ffcb29;
+}
+
+.guild > img {
+  margin-bottom: 50px;
+}
+
+.guild > img:active {
+  transform: scale(0.9);
+}

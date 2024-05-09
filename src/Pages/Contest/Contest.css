@@ -1,0 +1,148 @@
+.contests {
+  margin-bottom: 100px;
+
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.list {
+  display: flex;
+  gap: 16px;
+}
+
+.contest {
+  background: #f3f3f3;
+  border: 1px solid #e8e8e8;
+  padding: 16px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.contest h1 {
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 19.36px;
+  inline-size: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between !important;
+  width: 100%;
+}
+
+.contest section {
+  background: #ffcb2933;
+  border: 1px solid #ffcb29;
+  padding: 5px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info p {
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.info span {
+  font-family: Inter;
+  font-size: 12px;
+  line-height: 20px;
+  opacity: 0.7;
+}
+
+.contests > h1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 24px;
+
+  margin-top: 25px;
+}
+
+.contests > h1 span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #ffcb2933;
+  border: 1px solid #ffcb29;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.pariticipants {
+  display: flex;
+  flex-direction: column;
+  background: #f3f3f3;
+  border: 1px solid #e8e8e8;
+  border-radius: 24px;
+  padding: 15px;
+}
+
+.participant {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 7px;
+  border-bottom: 2px solid #e8e8e8;
+}
+
+.participant h1 {
+  background: #ffcb2933;
+  border: 1px solid #ffcb29;
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 16px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.participant img {
+  max-width: 35px;
+  max-height: 35px;
+}
+
+.participant p {
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 19.36px;
+  text-align: left;
+}
+
+.participant span {
+  font-family: Inter;
+  font-size: 12px;
+  line-height: 20px;
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.participant span img {
+  width: 15px;
+  height: 15px;
+}
+
+.pariticipants > :last-child {
+  border-bottom: none;
+}

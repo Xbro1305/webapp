@@ -1,0 +1,25 @@
+nav {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap:110px;
+  padding: 16px;
+  width: 100%;
+}
+
+nav a {
+  display: none;
+}
+
+nav > section > a.active {
+  display: block;
+  font-size: var(--b1);
+  text-decoration: none;
+  color: black;
+  font-family: var(--ff2);
+}
+
+.toProfile {
+  display: block;
+}

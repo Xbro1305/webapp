@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Michroma&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overscroll-behavior: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  background: linear-gradient(
+    rgba(255, 203, 41, 0.6) 0%,
+    rgba(255, 255, 255) 50%,
+    rgba(255, 255, 255) 100%
+  );
+}
+
+#root {
+  max-width: 360px;
+  width: 100%;
+  position: relative;
+}
+
+:root {
+  --fs0: 60px;
+  --fs1: 48px;
+  --fs2: 40px;
+  --fs3: 36px;
+  --fs4: 32px;
+  --fs5: 24px;
+  --fs6: 20px;
+
+  --lh0: 64px;
+  --lh1: 56px;
+  --lh2: 48px;
+  --lh3: 40px;
+  --lh4: 40px;
+  --lh5: 32px;
+  --lh6: 24px;
+
+  --t1: 18px;
+  --t2: 16px;
+  --t3: 14px;
+
+  --b1: 16px;
+  --b2: 14px;
+
+  --tab: 14px;
+
+  --body1: 14px;
+  --body2: 12px;
+
+  --chip: 10px;
+
+  --ff1: Michroma;
+  --ff2: Inter;
+}
