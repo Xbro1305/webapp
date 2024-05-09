@@ -1,7 +1,7 @@
 import React from "react";
-import ava from "../../images/frenavatar.svg";
+import ava from "../../images/Group 4.svg";
 import tokens from "../../images/tokens.svg";
-import avaplus from "../../images/avaplus.svg";
+import avaplus from "../../images/Frame.svg";
 import copy from "../../images/copy.svg";
 import { Header } from "../../Components/Header/Header";
 import info from "../../images/info.svg";

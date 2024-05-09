@@ -12,6 +12,7 @@
   line-height: 24px;
   display: flex;
   justify-content: space-between;
+  font-weight: 500;
 }
 
 .guilds > h1 span {

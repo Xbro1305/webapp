@@ -40,4 +40,15 @@ footer a img {
 
 footer a.active {
   opacity: 1;
+  position: relative;
+  transform: translateY(-5px);
+}
+
+footer a.active span {
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background: #ffcb29;
+  position: absolute;
+  bottom: -21.7px;
 }

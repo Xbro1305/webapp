@@ -13,18 +13,22 @@ export const Footer = () => {
         <NavLink to={"/frens"}>
           <img src={frens} alt="" />
           <p>Frens</p>
+          <span></span>
         </NavLink>
         <NavLink to={"/contest"}>
           <img src={contest} alt="" />
           <p>Contest</p>
+          <span></span>
         </NavLink>
         <NavLink to={"/guild"}>
           <img src={guild} alt="" />
           <p>Guild</p>
+          <span></span>
         </NavLink>
         <NavLink to={"/profile"}>
           <img src={profile} alt="" />
           <p>Profile</p>
+          <span></span>
         </NavLink>
       </div>
     </footer>

@@ -2,9 +2,9 @@ import React from "react";
 import { Header } from "../../Components/Header/Header";
 import calendar from "../../images/calendar.svg";
 import contest from "../../images/contest.svg";
-import ava from "../../images/frenavatar.svg";
+import ava from "../../images/Group 4.svg";
 import tokens from "../../images/tokens.svg";
-import clock from "../../images/clock.svg";
+
 import "./Contest.css";
 
 export const Contest = () => {

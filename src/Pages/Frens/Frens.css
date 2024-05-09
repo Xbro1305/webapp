@@ -72,6 +72,7 @@
 
 .select h1.active {
   border-bottom: 3px solid #ffcb29;
+  margin-bottom: -0.5px;
 }
 
 .nothing {
@@ -92,8 +93,8 @@
 }
 
 .fren img {
-  max-width: 70px;
-  max-height: 70px;
+  width: 70px;
+  height: 70px;
 }
 
 .fren section {
