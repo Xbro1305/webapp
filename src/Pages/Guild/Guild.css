@@ -56,26 +56,41 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 0 10px;
 }
 
-.guild > :nth-child(2) > h3 p {
+.guild > :nth-child(2) > div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.guild > :nth-child(2) h3 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.guild > :nth-child(2) h3 p {
   font-size: var(--t2);
-  font-weight: 400;
+  font-weight: 500;
   font-family: var(--ff2);
 }
 
-.guild > :nth-child(2) > h3 span img {
+.guild > :nth-child(2) h3 span img {
   width: 15px;
   height: 15px;
 }
 
-.guild > :nth-child(2) > h3 span {
+.guild > :nth-child(2) h3 span {
   font-size: var(--body2);
   display: flex;
   align-items: center;
   font-weight: 400;
   font-family: var(--ff2);
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .guild > :nth-child(2) > section {
@@ -167,6 +182,7 @@
   border: none;
   height: 55px;
   background: #fff;
+  gap: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -184,4 +200,56 @@
 
 .guild > img:active {
   transform: scale(0.9);
+}
+
+.balance {
+  text-align: center;
+}
+
+.energy {
+  display: flex;
+  margin-bottom: 130px;
+  width: 100%;
+  padding: 16px;
+  border-radius: 16px;
+  background: #f3f3f3;
+}
+
+.energy div {
+  background: #999 !important;
+  width: 100%;
+}
+
+.energy h1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.energy > :nth-child(2) {
+  width: 100%;
+  padding: 0;
+  background: none;
+  border-radius: 0px;
+}
+
+.energy h1 {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #000;
+}
+
+.energy h1 span {
+  color: #999;
+}
+
+.energy figure {
+  margin-right: 20px;
+  background: #ffcb2933;
+  border: 1px solid #ffcb29;
+  border-radius: 8px;
+  padding: 2px 5px;
+  padding-top: 4px;
 }

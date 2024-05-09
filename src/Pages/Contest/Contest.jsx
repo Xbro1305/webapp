@@ -16,68 +16,70 @@ export const Contest = () => {
   ];
 
   return (
-    <div className="contests">
+    <>
       <Header />
-      <div className="list">
-        <section className="contest">
-          <h1>
-            Contest name
-            <section>
-              <img src={contest} alt="" />
-            </section>
-          </h1>
-          <div className="info">
-            <div>
-              <p>64</p>
-              <span>Players</span>
+      <div className="contests">
+        <div className="list">
+          <section className="contest">
+            <h1>
+              Contest name
+              <section>
+                <img src={contest} alt="" />
+              </section>
+            </h1>
+            <div className="info">
+              <div>
+                <p>64</p>
+                <span>Players</span>
+              </div>
+              <div>
+                <p>10</p>
+                <span>days left</span>
+              </div>
             </div>
-            <div>
-              <p>10</p>
-              <span>days left</span>
+          </section>
+          <section className="contest">
+            <h1>
+              Contest name
+              <section>
+                <img src={contest} alt="" />
+              </section>
+            </h1>
+            <div className="info">
+              <div>
+                <p>64</p>
+                <span>Players</span>
+              </div>
+              <div>
+                <p>10</p>
+                <span>days left</span>
+              </div>
             </div>
-          </div>
-        </section>
-        <section className="contest">
-          <h1>
-            Contest name
-            <section>
-              <img src={contest} alt="" />
-            </section>
-          </h1>
-          <div className="info">
-            <div>
-              <p>64</p>
-              <span>Players</span>
+          </section>
+        </div>
+        <h1>
+          64 Participants
+          <span>
+            <img src={calendar} alt="" />
+            All time
+          </span>
+        </h1>
+        <div className="pariticipants">
+          {participants.map((participant, index) => (
+            <div className="participant">
+              <h1>{index + 1}</h1>
+              <img src={participant.img} alt="" />
+              <section>
+                <p>{participant.name}</p>
+                <span>
+                  <img src={tokens} alt="" />
+                  {participant.token}
+                </span>
+              </section>
             </div>
-            <div>
-              <p>10</p>
-              <span>days left</span>
-            </div>
-          </div>
-        </section>
+          ))}
+        </div>
       </div>
-      <h1>
-        64 Participants
-        <span>
-          <img src={calendar} alt="" />
-          All time
-        </span>
-      </h1>
-      <div className="pariticipants">
-        {participants.map((participant, index) => (
-          <div className="participant">
-            <h1>{index + 1}</h1>
-            <img src={participant.img} alt="" />
-            <section>
-              <p>{participant.name}</p>
-              <span>
-                <img src={tokens} alt="" />
-                {participant.token}
-              </span>
-            </section>
-          </div>
-        ))}
-      </div>
-    </div>
+    </>
   );
 };

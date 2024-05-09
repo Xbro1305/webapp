@@ -17,6 +17,8 @@ export const Guild = () => {
     document.querySelector(".balance").innerHTML =
       Number(document.querySelector(".balance").innerHTML) + 1;
   };
+  const now = 7413;
+  const max = 7500;
   return (
     <>
       <Header />
@@ -32,14 +34,16 @@ export const Guild = () => {
           </h3>
         </section>
         <section>
-          <img src={frens} alt="" />
-          <h3>
-            <p>Bigbullz</p>
-            <span>
-              <img src={tokens} alt="" />
-              7500000000
-            </span>
-          </h3>
+          <div>
+            <img src={frens} alt="" />
+            <h3>
+              <p>Bigbullz</p>
+              <span>
+                <img src={tokens} alt="" />
+                7,500,000,000
+              </span>
+            </h3>
+          </div>
           <section>
             <span>
               <img src={star} alt=" " />
@@ -55,8 +59,8 @@ export const Guild = () => {
           </h2>
           <h3 className="balance">870000000</h3>
           <div>
-            <p className="from">3041550107</p>
-            <p className="to">7500000000</p>
+            <p className="from">3,041,550,107</p>
+            <p className="to">7,500,000,000</p>
             <img src={balance} alt="" />
           </div>
           <div className="buttons">
@@ -66,11 +70,37 @@ export const Guild = () => {
             </button>
             <button>
               <img src={guild} alt="" />
-              138
+              13,8
             </button>
           </div>
         </section>
         <img src={coin} alt="" onClick={click} />
+        <div className="energy">
+          <figure>
+            <img src={energy} alt="" />
+          </figure>
+          <section>
+            <h1>
+              <p>{now}</p>
+              <span>{max}</span>
+            </h1>
+            <div
+              style={{
+                borderRadius: "4px",
+                overflow: "hidden",
+                marginTop: "-10px",
+              }}
+            >
+              <h3
+                style={{
+                  width: `${(now / max) * 100}%`,
+                  background: "#FFCB29",
+                  height: "4px",
+                }}
+              ></h3>
+            </div>
+          </section>
+        </div>
       </div>
     </>
   );

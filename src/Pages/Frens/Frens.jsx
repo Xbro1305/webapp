@@ -17,8 +17,8 @@ export const Frens = () => {
 
   return (
     <>
+      <Header />
       <div className="frens main">
-        <Header />
         <section>
           <section>
             <div>

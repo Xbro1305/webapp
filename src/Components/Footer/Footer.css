@@ -5,8 +5,9 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  background: #fff;
-  padding-bottom: 20px;
+  background: linear-gradient(#ffffff00 0%, #fff 25%);
+  padding: 20px 0;
+  padding-top: 30px;
 }
 
 .footer {
