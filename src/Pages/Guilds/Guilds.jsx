@@ -12,43 +12,65 @@ export const Guilds = () => {
     { img: ava, name: "Bigbullz", token: "7,500,000,000", members: "46" },
     { img: ava, name: "Bigbullz", token: "7,500,000,000", members: "46" },
     { img: ava, name: "Bigbullz", token: "7,500,000,000", members: "46" },
+    { img: ava, name: "Bigbullz", token: "7,500,000,000", members: "46" },
+    { img: ava, name: "Bigbullz", token: "7,500,000,000", members: "46" },
+    { img: ava, name: "Bigbullz", token: "7,500,000,000", members: "46" },
+    { img: ava, name: "Bigbullz", token: "7,500,000,000", members: "46" },
+    { img: ava, name: "Bigbullz", token: "7,500,000,000", members: "46" },
+    { img: ava, name: "Bigbullz", token: "7,500,000,000", members: "46" },
+    { img: ava, name: "Bigbullz", token: "7,500,000,000", members: "46" },
+    { img: ava, name: "Bigbullz", token: "7,500,000,000", members: "46" },
+    { img: ava, name: "Bigbullz", token: "7,500,000,000", members: "46" },
+    { img: ava, name: "Bigbullz", token: "7,500,000,000", members: "46" },
+    { img: ava, name: "Bigbullz", token: "7,500,000,000", members: "46" },
+    { img: ava, name: "Bigbullz", token: "7,500,000,000", members: "46" },
+    { img: ava, name: "Bigbullz", token: "7,500,000,000", members: "46" },
+    { img: ava, name: "Bigbullz", token: "7,500,000,000", members: "46" },
+    { img: ava, name: "Bigbullz", token: "7,500,000,000", members: "46" },
+    { img: ava, name: "Bigbullz", token: "7,500,000,000", members: "46" },
+    { img: ava, name: "Bigbullz", token: "7,500,000,000", members: "46" },
+    { img: ava, name: "Bigbullz", token: "7,500,000,000", members: "46" },
+    { img: ava, name: "Bigbullz", token: "7,500,000,000", members: "46" },
+    { img: ava, name: "Bigbullz", token: "7,500,000,000", members: "46" },
   ];
 
   return (
-    <div className="guilds">
+    <>
       <Header />
-      <h1>
-        46 Guilds{" "}
-        <span>
-          <img src={params} alt="" />
-          Highest to lowest
-        </span>
-      </h1>
-      <div className="guildList">
-        {guilds.map((guild) => (
-          <div className="Guild pariticipants">
-            <section>
-              <img src={guild.img} alt="" />
-              <h2>
-                <p>{guild.name}</p>
-                <span>
-                  <img src={tokens} alt="" />
-                  {guild.token}
-                </span>
-              </h2>
-            </section>
-            <section>
-              <h1>
-                <p>
-                  <img src={star} alt="" />
-                  Top 10
-                </p>
-                <span>{guild.members} members</span>
-              </h1>
-            </section>
-          </div>
-        ))}
+      <div className="guilds">
+        <h1>
+          46 Guilds
+          <span>
+            <img src={params} alt="" />
+            Highest to lowest
+          </span>
+        </h1>
+        <div className="guildList">
+          {guilds.map((guild) => (
+            <div className="Guild pariticipants">
+              <section>
+                <img src={guild.img} alt="" />
+                <h2>
+                  <p>{guild.name}</p>
+                  <span>
+                    <img src={tokens} alt="" />
+                    {guild.token}
+                  </span>
+                </h2>
+              </section>
+              <section>
+                <h1>
+                  <p>
+                    <img src={star} alt="" />
+                    Top 10
+                  </p>
+                  <span>{guild.members} members</span>
+                </h1>
+              </section>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
