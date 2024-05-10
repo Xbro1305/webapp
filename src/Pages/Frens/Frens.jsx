@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ava from "../../images/Group 4.svg";
 import tokens from "../../images/tokens.svg";
 import avaplus from "../../images/Frame.svg";
@@ -8,6 +8,7 @@ import info from "../../images/info.svg";
 import "./Frens.css";
 
 export const Frens = () => {
+  const [cls, setCls] = useState("modal");
   const frens = [
     { img: ava, name: "Bigbullz", token: "7,500,000,000", got: "+3,000" },
     { img: ava, name: "Bigbullz", token: "7,500,000,000", got: "+3,000" },
@@ -35,6 +36,15 @@ export const Frens = () => {
     { img: ava, name: "Bigbullz", token: "7,500,000,000", got: "+3,000" },
   ];
 
+  const copyref = () => {
+    setCls("modal active");
+    setTimeout(() => {
+      setCls("modal");
+    }, 3000);
+    const ref = "hkgkjl;asfsda";
+    navigator.clipboard.writeText(ref);
+  };
+
   return (
     <>
       <Header />
@@ -46,7 +56,7 @@ export const Frens = () => {
             </div>
             <span>Refer a fren and earn up to 25,000 Gold dust.</span>
           </section>
-          <button>
+          <button onClick={copyref}>
             <img src={copy} alt="" /> Copy referral link
           </button>
         </section>
@@ -73,7 +83,7 @@ export const Frens = () => {
           </div>
         )}
 
-        <div className="modal ">
+        <div className={cls}>
           <div className="modalContent">
             <span className="line"></span>
             <section>

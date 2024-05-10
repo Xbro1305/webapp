@@ -131,16 +131,17 @@
 
 .modal {
   position: absolute;
-  top: 0;
+  top: -100%;
   left: 0;
   width: 100%;
   height: 100vh;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: flex-end;
   backdrop-filter: blur(5px);
   z-index: 9999;
   background: #2121211a;
+  transition: all 0.5s ease;
 }
 
 .modalContent {
@@ -208,5 +209,5 @@
 }
 
 .modal.active {
-  display: flex;
+  top: 0;
 }

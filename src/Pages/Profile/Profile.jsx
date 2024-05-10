@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Profile.css";
 import { Header } from "../../Components/Header/Header";
 import profile from "../../images/avaplus.svg";
@@ -12,6 +12,14 @@ import fourth from "../../images/Frame4.svg";
 import fifth from "../../images/Frame5.svg";
 
 export const Profile = () => {
+  const [cls, setCls] = useState("modal");
+  const open = () => {
+    setCls("modal active");
+    setTimeout(() => {
+      setCls("modal");
+    }, 3000);
+  };
+
   return (
     <div className="profile main">
       <Header />
@@ -66,13 +74,13 @@ export const Profile = () => {
             <img src={arrow} alt="" />
             Add funds
           </button>
-          <button>
+          <button onClick={open}>
             <img src={arrow} alt="" />
             Withdraw
           </button>
         </h1>
       </div>
-      <div className="modal">
+      <div className={cls}>
         <div className="modalContent" style={{ paddingBottom: "0" }}>
           <span className="line"></span>
           <section>

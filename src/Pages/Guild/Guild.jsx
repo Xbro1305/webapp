@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import frens from "../../images/frenavatar.svg";
 import energy from "../../images/energy.svg";
 import info from "../../images/info.svg";
@@ -13,11 +13,12 @@ import "./Guild.css";
 import { Header } from "../../Components/Header/Header";
 
 export const Guild = () => {
+  const [now, setNow] = useState(7500);
   const click = () => {
     document.querySelector(".balance").innerHTML =
       Number(document.querySelector(".balance").innerHTML) + 1;
+    setNow(now - 1);
   };
-  const now = 7413;
   const max = 7500;
   return (
     <>
