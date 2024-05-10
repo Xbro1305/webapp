@@ -10,22 +10,22 @@ export const Footer = () => {
   return (
     <footer>
       <div className="footer">
-        <NavLink to={"/frens"}>
+        <NavLink onClick={() => window.scrollTo(0, 0)} to={"/frens#nav"}>
           <img src={frens} alt="" />
           <p>Frens</p>
           <span></span>
         </NavLink>
-        <NavLink to={"/contest"}>
+        <NavLink onClick={() => window.scrollTo(0, 0)} to={"/contest#contest"}>
           <img src={contest} alt="" />
           <p>Contest</p>
           <span></span>
         </NavLink>
-        <NavLink to={"/guild"}>
+        <NavLink onClick={() => window.scrollTo(0, 0)} to={"/guild#nav"}>
           <img src={guild} alt="" />
           <p>Guild</p>
           <span></span>
         </NavLink>
-        <NavLink to={"/profile"}>
+        <NavLink onClick={() => window.scrollTo(0, 0)} to={"/profile#profile"}>
           <img src={profile} alt="" />
           <p>Profile</p>
           <span></span>

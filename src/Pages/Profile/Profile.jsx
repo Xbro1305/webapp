@@ -21,7 +21,7 @@ export const Profile = () => {
   };
 
   return (
-    <div className="profile main">
+    <div className="profile main" id="profile">
       <Header />
 
       <section className="img">
@@ -81,6 +81,7 @@ export const Profile = () => {
         </h1>
       </div>
       <div className={cls}>
+        <button onClick={() => setCls("modal")}></button>
         <div className="modalContent" style={{ paddingBottom: "0" }}>
           <span className="line"></span>
           <section>

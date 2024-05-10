@@ -129,6 +129,16 @@
   background: #2121211a;
 }
 
+.modal > button {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: none !important;
+}
+
 .modalContent {
   max-width: 330px !important;
   width: 100%;

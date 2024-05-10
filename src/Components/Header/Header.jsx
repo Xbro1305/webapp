@@ -5,7 +5,7 @@ import "./Header.css";
 
 export const Header = () => {
   return (
-    <nav>
+    <nav id="nav">
       <section>
         <NavLink to={"/guild"}>Guild</NavLink>
         <NavLink to={"/profile"}>Profile</NavLink>

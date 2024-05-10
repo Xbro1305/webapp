@@ -39,7 +39,7 @@ export const Contest = () => {
     <>
       <Header />
       <div className="contests">
-        <div className="list">
+        <div className="list" id="contest">
           <section className="contest">
             <h1>
               Contest name

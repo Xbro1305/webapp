@@ -84,6 +84,7 @@ export const Frens = () => {
         )}
 
         <div className={cls}>
+          <button onClick={() => setCls("modal")}></button>
           <div className="modalContent">
             <span className="line"></span>
             <section>
