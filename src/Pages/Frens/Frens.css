@@ -145,7 +145,7 @@
 }
 
 .modalContent {
-  max-width: 360px;
+  max-width: 330px !important;
   width: 100%;
   z-index: 999999;
   display: flex;
