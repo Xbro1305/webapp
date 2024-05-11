@@ -81,7 +81,7 @@ export const Profile = () => {
         </h1>
       </div>
       <div className={cls}>
-        <button onClick={() => setCls("modal")}></button>
+        <button className={cls} onClick={() => setCls("modal")}></button>
         <div className="modalContent" style={{ paddingBottom: "0" }}>
           <span className="line"></span>
           <section>
